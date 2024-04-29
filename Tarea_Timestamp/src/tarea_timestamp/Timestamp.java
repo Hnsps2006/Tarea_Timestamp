@@ -74,20 +74,16 @@ public class Timestamp {
     public void setMes(int mes){
         if (mes >= 1 && mes <= 12) {
             this.mes = mes;
-            boolean entrada = true;
         } else{
             System.out.println("Mes inválido.");
-            boolean entrada = false;
         }
     }
     
     public void setDia(int dia) {
         if (dia >= 1 && dia <= DiadeCadaMes(this.mes, this.año)) {
             this.dia = dia;
-            boolean entrada = true;
         } else {
             System.out.println("Día inválido.");
-            boolean entrada = false;
         }
     }
 
@@ -95,30 +91,24 @@ public class Timestamp {
     public void setHora(int hora) {
         if (hora >= 0 && hora <= 23) {
             this.hora = hora;
-            boolean entrada = true;
         } else {
             System.out.println("Hora inválida.");
-            boolean entrada = false;
         }
     }
     
     public void setMinuto(int minuto) {
         if (minuto >= 0 && minuto <= 59) {
             this.minuto = minuto;
-            boolean entrada = true;
         } else { 
             System.out.println("Minutos inválidos.");
-            boolean entrada = false;
         }
     }
     
     public void setSegundo(int segundo) {
         if (segundo >= 0 && segundo <= 59) {
             this.segundo = segundo;
-            boolean entrada = true;
         } else { 
             System.out.println("Segundos inválidos");
-            boolean entrada = false;
         }
     }
     

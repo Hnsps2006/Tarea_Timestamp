@@ -40,7 +40,7 @@ public class Tarea_Timestamp {
         fecha6.setSegundo(1);
         System.out.println(fecha6);
 
-        System.out.println("/n/n/n");
+        System.out.println("\n\n\n");
 
         Timestamp fecha2 = new Timestamp();
 
@@ -147,7 +147,7 @@ public class Tarea_Timestamp {
             System.out.println("Ingrese el segundo que desea: ");
             int segundo = entrada.nextInt();
             if (segundo >= 0 && segundo <= 59) {
-                fecha3.setHora(segundo);
+                fecha3.setSegundo(segundo);
                 entrada1 = false;
             } else {
                 System.out.println("Segundo inválido");
